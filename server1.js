@@ -24,7 +24,7 @@ app.all('/api/*', function (req, res, next) {
         login !== auth.login ||
         password !== auth.password) {
         res.set('WWW-Authenticate', 'Basic realm="nope"') // change this
-        res.status(401).send('Request is not authorized. You must pass credentials')
+        res.status(401).send('Request is not authorizeddd. You must pass credentials')
         return
     }
     else {
